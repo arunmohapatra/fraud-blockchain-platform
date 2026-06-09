@@ -1,0 +1,27 @@
+server:
+  port: 8545
+
+spring:
+  application:
+    name: blockchain-service
+
+# Blockchain Configuration
+blockchain:
+  mining:
+    difficulty: 4  # Number of leading zeros required
+    reward: 50
+  genesis:
+    data: "Genesis Block - Fraud Detection System"
+
+# Logging
+logging:
+  level:
+    com.hackathon.blockchain: DEBUG
+
+# Swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
